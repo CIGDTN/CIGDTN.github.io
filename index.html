@@ -112,50 +112,7 @@
       </div>
     </div>
 
-    <div class="container shadow p-5 mb-5 bg-white rounded">
-      <h3>Comparison between dual text encoders and only structured text encoder<a id="dual_comparison"></h3>
-      <p class="mb-0">
-        When LLM parsing the original natural language input, some adjective or quantifier may be lost, and sometimes the structured inputs' format is incorrect. Dual text encoders can avoid information loss and are more robust in these situations. 
-      </p>
-      <div class="container pt-3 table-responsive">
-        <table
-          class="table table-hover"
-          id="prompting-table">
-          <thead>
-            <tr>
-              <th width="20%">Sample</th>
-              <th width="20%">Raw Input</th>
-              <th width="20%">Clean Audio</th>
-              <th width="20%">Denoised Audio</th>
-            </tr>
-          </thead>
-          <tbody>
-             <tr>
-             </tr>
-             <tr> <td><font size="-1">A strong torrent of rain is audible outside of a window</font></td> 
-                <td><font size="-1">&ltstrong&gtSound of strong torrent of rain outside window & all&lt/strong&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/dual/A-strong-torrent-of-rain-is-audible-outside-of-a-window.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/structured/A-strong-torrent-of-rain-is-audible-outside-of-a-window.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-              <tr> <td><font size="-1">A motorcycle revving by quickly twice</font></td> 
-                  <td><font size="-1">&ltmotorcycle revving & all&gt@&ltquickly twice & end&gt&lt/quickly&gt</font></td> 
-                  <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/dual/A-motorcycle-revving-by-quickly-twice.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                  <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/structured/A-motorcycle-revving-by-quickly-twice.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-            <tr> <td><font size="-1">A car moves quickly and is followed by someone walking and other cars</font></td> 
-                <td><font size="-1">&ltcar engine revving & start&gt@&ltcar tires screeching & mid&gt@&ltfootsteps running & mid&gt@&ltother car engines & mid to end&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/dual/A-car-moves-quickly-and-is-followed-by-someone-walking-and-other-cars.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/structured/A-car-moves-quickly-and-is-followed-by-someone-walking-and-other-cars.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-             <tr> <td><font size="-1">A metallic swirling and scraping that gets louder and more irregular</font></td> 
-                <td><font size="-1">&ltmetallic swirling and scraping & all, getting louder and more irregular&gt@</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/dual/A-metallic-swirling-and-scraping-that-gets-louder-and-more-irregular.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/structured/A-metallic-swirling-and-scraping-that-gets-louder-and-more-irregular.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-            <tr> <td><font size="-1">A gusting wind with waves crashing in the background from time to time</font></td> 
-              <td><font size="-1">&ltgusting wind & all&gt@&ltwaves crashing & random intervals&gt</font></td> 
-              <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/dual/A-gusting-wind-with-waves-crashing-in-the-background-from-time-to-time.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-              <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/dual_comparison/structured/A-gusting-wind-with-waves-crashing-in-the-background-from-time-to-time.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+   
 
 
   </body>
