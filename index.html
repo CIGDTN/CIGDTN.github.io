@@ -46,13 +46,11 @@
     <h2 id="model-overview" style="text-align: center;">CIGDT Overview</h2>
     <body>
     <p style="text-align: center;">
-        <img src="arch.png" height="200" width="800" class="img-fluid">
+        <img src="Overall.png" height="200" width="800" class="img-fluid">
     </p>
     </body>
         <p>
-            High-level overview of Make-An-Audio 2. Note that modules printed with a lock are
-            frozen when training the T2A model. The Text Encoder takes original natural language text as input. And the Temporal Encoder takes the LLMs-parsed structured caption as its input. The structured inputs are parsed before the training process.
-            The training process are seperated into two stages. The first stage we train the Audio VAE. The second stage we train the T2A diffusion module and freeze the parameters of both Audio VAE and Text Encoder.
+            A overall progress of our proposed CIGDTN model. Different modules are marked with different color blocks. The architecture of the main body fuses diffusion transformers (DiTs) architecture and sparse attention diffusion.
         </p>
 </div>
 
