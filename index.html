@@ -67,9 +67,9 @@
 </div>
 
     <div class="container shadow p-5 mb-5 bg-white rounded">
-      <h3>Precise Temporal Control<a id="prompting"/></h3>
+      <h3>BirdsSounddataset<a id="prompting"/></h3>
       <p class="mb-0">
-        Due to the ambiguity of natural language, the time period when some sound events occur may not be clearly described, and we can provide more precise temporal control by modifying the order in the structured input.
+        Below some examples:.
       </p>
       <div class="container pt-3 table-responsive">
         <table
@@ -78,36 +78,31 @@
         >
           <thead>
             <tr>
-              <th width="20%">Origin Input</th>
-              <th width="20%">Structured Input</th>
-              <th width="20%">Generated Audio</th>
-              <th width="20%">Structured Input</th>
-              <th width="20%">Generated Audio</th>
+              <th width="20%">Sample</th>
+              <th width="20%">Raw Input</th>
+              <th width="20%">Clean Audio</th>
+              <th width="20%">Denoised Audio</th>
             </tr>
           </thead>
           <tbody>
              <tr>
              </tr>
-             <tr> <td><font size="-1">Wind blowing followed by people speaking then a loud burst of thunder</font></td> 
-                <td><font size="-1">&ltwind blowing& all&gt@&ltpeople speaking& mid&gt@&ltthunder& end&gt</font></td> 
+             <tr> <td><font size="-1">Sample 1</font></td> 
                 <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><font size="-1">&ltwind blowing& start&gt@&ltpeople speaking& mid&gt@&ltthunder& end&gt</font></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
                 <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& start>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-             <tr> <td><font size="-1">A train running on railroad tracks followed by a train horn blowing and steam hissing</font></td> 
-                <td><font size="-1">&lttrain running on railroad tracks& all&gt@&lttrain horn blowing& end&gt@&ltsteam hissing& end&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/A-train-running-on-railroad-tracks-followed-by-a-train-horn-blowing-and-steam-hissing<train running on railroad tracks& all>@<train horn blowing& mid>@<steam hissing& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><font size="-1">&lttrain running on railroad tracks& all&gt@&lttrain horn blowing& mid&gt@&ltsteam hissing& end&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/A-train-running-on-railroad-tracks-followed-by-a-train-horn-blowing-and-steam-hissing<train running on railroad tracks& all>@<train horn blowing& mid>@<steam hissing& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-             <tr> <td><font size="-1">Winds and ocean waves crashing while a chime instrument briefly plays a melody</font></td> 
-                <td><font size="-1">&ltwinds& all&gt@&ltocean waves crashing& all&gt@&ltchime instrument melody& all&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Winds-and-ocean-waves-crashing-while-a-chime-instrument-briefly-plays-a-melody<winds& all>@<ocean waves crashing& all>@<chime instrument melody& all>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-                <td><font size="-1">&ltwinds& all&gt@&ltocean waves crashing& all&gt@&ltchime instrument melody& mid&gt</font></td> 
-                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Winds-and-ocean-waves-crashing-while-a-chime-instrument-briefly-plays-a-melody<winds& all>@<ocean waves crashing& all>@<chime instrument melody& mid>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
-            <tr> <td><font size="-1">Constant faint humming and a few light knocks</font></td> 
-              <td><font size="-1">&ltconstant faint humming & all&gt@&lta few light knocks & end&gt</font></td> 
-              <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Constant-faint-humming-and-a-few-light-knocks<constant faint humming& all>@<a few light knocks& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
-              <td><font size="-1">&ltconstant faint humming & all&gt@&lta few light knocks & start&gt</font></td> 
-              <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Constant-faint-humming-and-a-few-light-knocks<constant faint humming& all>@<a few light knocks& start>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
+             <tr> <td><font size="-1">Sample 2</font></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& start>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
+            <tr> <td><font size="-1">Sample 3</font></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& start>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
+             <tr> <td><font size="-1">Sample 4</font></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& all>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> 
+                <td><audio controls controlslist="nodownload" class="px-1"> <source src='data/precise/Wind-blowing-followed-by-people-speaking-then-a-loud-burst-of-thunder<wind blowing& start>@<people speaking& mid>@<thunder& end>.wav' type="audio/wav">Your browser does not support the audio element.</audio></td> </tr>
           </tbody>
         </table>
       </div>
@@ -124,10 +119,10 @@
           id="prompting-table">
           <thead>
             <tr>
-              <th width="25%">Origin Input</th>
-              <th width="25%">Wrongly Structured Input</th>
-              <th width="25%">Dual text encoders</th>
-              <th width="25%">Only structured text encoder</th>
+              <th width="20%">Sample</th>
+              <th width="20%">Raw Input</th>
+              <th width="20%">Clean Audio</th>
+              <th width="20%">Denoised Audio</th>
             </tr>
           </thead>
           <tbody>
