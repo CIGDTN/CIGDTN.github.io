@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Make-An-Audio 2</title>
+    <title>Complex Image-Generative Diffusion Transformer for Audio Denoising</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +24,7 @@
   <body>
     <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
       <div class="text-center">
-        <h1>Make-An-Audio 2</h1><h3>Temporal-Enhanced Text-to-Audio Generation</h3>
+        <h1>CIGDT</h1><h3>Complex Image-Generative Diffusion Transformer for Audio Denoising</h3>
         <p class="lead fw-bold">
           |<a
             href=""
@@ -39,12 +39,11 @@
       </div>
       <p>
         <b>Abstract.</b>  
-        Large diffusion models have been successful in text-to-audio (T2A) synthesis tasks, but they often suffer from common issues such as semantic misalignment and poor temporal consistency due to limited natural language understanding and data scarcity. Additionally, 2D spatial structures widely used in T2A works lead to unsatisfactory audio quality when generating variable-length audio samples since they do not adequately prioritize temporal information. To address these challenges, we propose Make-an-Audio 2, a latent diffusion-based T2A method that builds on the success of Make-an-Audio. Our approach includes several techniques to improve semantic alignment and temporal consistency: Firstly, we use pre-trained large language models (LLMs) to parse the text into structured <event \& order> pairs for better temporal information capture. We also introduce another structured-text encoder to aid in learning semantic alignment during the diffusion denoising process. To improve the performance of variable length generation and enhance the temporal information extraction, we design a feed-forward Transformer-based diffusion denoiser. Finally, we use LLMs to augment and transform a large amount of audio-label data into audio-text datasets to alleviate the problem of scarcity of temporal data. Extensive experiments show that our method outperforms baseline models in both objective and subjective metrics, and achieves significant gains in temporal information understanding, semantic consistency, and sound quality.
-      </p>
+        The audio denoising technique has captured widespread attention in the deep neural network field. Recently, the audio denoising problem has been converted into an image generation task, and deep learning-based approaches have been applied to tackle this problem. However, its performance is still limited, leaving room for further improvement. In order to enhance audio denoising performance, this paper introduces a complex image-generative diffusion transformer that captures more information from the complex Fourier domain. We explore a novel diffusion transformer by integrating the transformer with a diffusion model. Our proposed model demonstrates the scalability of the transformer and expands the receptive field of sparse attention using attention diffusion. Our work is among the first to utilize diffusion transformers to deal with the image generation task for audio denoising. Extensive experiments on two benchmark datasets demonstrate that our proposed model outperforms SOTA models.
     </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-    <h2 id="model-overview" style="text-align: center;">Make-An-Audio 2 Overview</h2>
+    <h2 id="model-overview" style="text-align: center;">CIGDT Overview</h2>
     <body>
     <p style="text-align: center;">
         <img src="arch.png" height="200" width="800" class="img-fluid">
